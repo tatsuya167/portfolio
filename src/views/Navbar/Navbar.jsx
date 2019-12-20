@@ -7,16 +7,13 @@ function Navbar(){
   return(
     <nav>
       <div className="nav-container">
-        <ul className="top">
+        <ul>
+          <a href="/" className="nav-bar">
             <Logo />
-          <li className="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </li>
-          <li className="end">
-            <ul>
-              <a href="#Home">Home</a>
+          </a>
+          <li>
+            <ul className="nav-menu">
+              <a href="#">Home</a>
               <a href="#works">Works</a>
               <a href="#About">About</a>
               <a href="#">Contact</a>

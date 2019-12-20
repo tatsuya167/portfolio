@@ -1,25 +1,18 @@
 @import '../../styles/_breakpoints.scss';
 
 nav {
-  background-color: white;
+  background-color: transparent;
   position: fixed;
   width: 100%;
   z-index: 3;
+  box-shadow: 1px 0px 3px 3px #4f4f4f;
 
   svg {
-    width: 270px;
-    height: 100px;
+    padding-top: 1em;
+    width: 110px;
+    height: 60px;
   }
-
-  button {
-    border: none;
-    padding: 17px 0;
-    font-size: 1.2em;
-    background-color: #3898EC;
-    color: white;
-    cursor: pointer;
-    font-family: Roboto;
-  }
+  
 
   .nav-container {
     width: 95%;
@@ -36,13 +29,25 @@ nav {
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
     color: rgba(34,34,34, 0.6);
 
-    li:hover {
-      cursor: pointer;
-      color: #068DC2;
+    a {
+      text-decoration: none;
+      margin: 0 1em;
     }
+
+    a.nav-bar:hover {
+      transform: translateX(1em) scale(1.2);
+      transition: .6s;
+    }
+
+    .nav-menu {
+      a:hover {
+        cursor: pointer;
+        color: #068DC2;
+      }
+    }
+    
   }
 
   
