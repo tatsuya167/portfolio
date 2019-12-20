@@ -1,0 +1,51 @@
+@import '../../styles/_breakpoints.scss';
+
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  svg {
+    width: 270px;
+    height: 100px;
+  }
+
+  button {
+    border: none;
+    padding: 17px 0;
+    font-size: 1.2em;
+    background-color: #3898EC;
+    color: white;
+    cursor: pointer;
+    font-family: Roboto;
+  }
+
+  .nav-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  ul {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: rgba(34,34,34, 0.6);
+
+    li:hover {
+      cursor: pointer;
+      color: #068DC2;
+    }
+  }
+
+  
+}
+
+
