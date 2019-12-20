@@ -1,0 +1,118 @@
+#works {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4f4f4f;
+
+    // code from sandbox---------------
+    ul {
+        width: fit-content;
+        list-style-type: none;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+    
+    ul li {
+        --c: goldenrod;
+        color: var(--c);
+        font-size: 16px;
+        border: 0.3em solid var(--c);
+        border-radius: 0.5em;
+        width: 12em;
+        height: 3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: 0.1em;
+        text-align: center;
+        line-height: 3em;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.5s;
+        margin-bottom:  1em;
+    }
+    
+    ul li span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: var(--c);
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+    }
+    
+    ul li:hover {
+        color: black;
+    }
+    
+    ul li:hover span {
+        transform: translateY(0) scale(2);
+    }
+    
+    ul li span:nth-child(1) {
+        --n: 1;
+    }
+    
+    ul li span:nth-child(2) {
+        --n: 2;
+    }
+    
+    ul li span:nth-child(3) {
+        --n: 3;
+    }
+    
+    ul li span:nth-child(4) {
+      --n: 4;
+    }
+    // ---------------
+
+    .wrap-grid{
+        width: fit-content;
+        margin: 0 auto;
+        .works-container {
+            display: grid;
+            grid-template-columns: 20em 20em 20em;
+            grid-auto-rows: 20em auto;
+            grid-gap: 10px;
+            position: relative;
+            margin: 0 auto;
+
+            div {
+                background-color: #c4c4c4;
+                border-radius: 4px;
+            }
+
+            .one {
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+            }
+            
+            .two {
+                // grid-column: 1 / 3;
+                grid-row: 1 / 2;
+            }
+
+            .three {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+
+            .four {
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+            }
+
+            .five {
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
+            }
+        }
+    }
+}
+
