@@ -1,0 +1,154 @@
+#About {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e0e0e0;
+
+    // code from sandbox---------------
+    ul {
+        width: fit-content;
+        list-style-type: none;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+    
+    ul li {
+        --c: goldenrod;
+        color: var(--c);
+        font-size: 16px;
+        border: 0.3em solid var(--c);
+        border-radius: 0.5em;
+        width: 12em;
+        height: 3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: 0.1em;
+        text-align: center;
+        line-height: 3em;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.5s;
+        margin-bottom:  1em;
+    }
+    
+    ul li span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: var(--c);
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+    }
+    
+    ul li:hover {
+        color: black;
+    }
+    
+    ul li:hover span {
+        transform: translateY(0) scale(2);
+    }
+    
+    ul li span:nth-child(1) {
+        --n: 1;
+    }
+    
+    ul li span:nth-child(2) {
+        --n: 2;
+    }
+    
+    ul li span:nth-child(3) {
+        --n: 3;
+    }
+    
+    ul li span:nth-child(4) {
+      --n: 4;
+    }
+    // ---------------
+
+    .wrap-grid {
+        width: fit-content;
+        margin: 0 auto;
+        .about-container {
+            display: grid;
+            // grid-template-columns: 15em 15em 15em 15em;
+            grid-template-columns: repeat(8, 7.5em);
+            grid-auto-rows: 7.5em;
+            grid-gap: 20px;
+            position: relative;
+            margin: 0 auto;
+
+
+            div {
+                border: 1px solid silver;
+            }
+
+            .picture {
+                grid-column: 2 / 6;
+                grid-row: 1 / 4;
+                border: 4px solid silver;
+                // background-color: #c4c4c4;
+            }
+
+            .text {
+                grid-column: 6 / 9;
+                grid-row: 1 / 5;
+                border: none;
+
+                p {
+                    // float: left;
+                    text-align: left;
+                    padding: 8px;
+                    color: #4f4f4f;
+                    font-size: 26;
+                    font-weight: 700;
+                }
+            }
+
+            .skills {
+                grid-column: 6 / 9;
+                grid-row: 4 / 5;
+                display: flex;
+                justify-content: start;
+                border: none;
+
+                p {
+                    text-align: left;
+                    padding: 8px 16px;
+                    display: table-cell;
+                    font-weight: bold;
+                    
+                }
+            }
+
+            .resume {
+                grid-column: 3 / 5;
+                grid-row: 4 / 5;
+                // -------
+                margin:2em 0;
+                position: relative;
+                padding: 0.5em 1.5em;
+                border-top: solid 2px black;
+                border-bottom: solid 2px black;
+                
+
+                ::before, ::after{
+                    content: '';
+                position: absolute;
+                top: -10px;
+                width: 2px;
+                height: calc(100% + 20px);
+                background-color: black;
+                }
+                ::before {left: 10px;}
+                ::after {right: 10px;}
+            }
+        }
+    }
+}
