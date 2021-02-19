@@ -3,7 +3,6 @@ import './Navbar.scss';
 import Logo from './logo.jsx';
 
 function Navbar(){
-// eslint-disable-next-line
   return(
     <nav>
       <div className="nav-container">
