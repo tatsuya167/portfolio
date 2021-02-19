@@ -53,7 +53,7 @@ const About = () => {
                         <p>-SCSS</p>
                     </div>
                     <div className="resume">
-                        <a href="#" >resume</a>
+                        <a href="#Resume" >Resume</a>
                     </div>
                 </div>
             </div>
