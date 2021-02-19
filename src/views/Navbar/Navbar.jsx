@@ -13,7 +13,7 @@ function Navbar(){
           </a>
           <li>
             <ul className="nav-menu">            
-              <a href="#">Home</a>
+              <a href="#Home">Home</a>
               <a href="#works">Works</a>
               <a href="#About">About</a>
               <a href="#Contact">Contact</a>
