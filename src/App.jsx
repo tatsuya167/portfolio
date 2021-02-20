@@ -5,6 +5,7 @@ import Navbar from "./views/Navbar/Navbar.jsx"
 import Header from "./views/Header/Header.jsx"
 import Works from "./views/Works/Works.jsx"
 import About from "./views/About/About.jsx"
+import Address from "./views/Address/Address.jsx"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Works />
       <About />
+      <Address/>
     </div>
   );
 }
