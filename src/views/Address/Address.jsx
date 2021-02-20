@@ -1,44 +1,45 @@
 import React from "react";
 import "./Address.scss"
-// import Logo from "./Logo.jsx";
+import Logo from "./logo.jsx";
 
 const Address = () => {
     return (
         <section id="footer">
             <div className="wrap-grid">
                 <ul>
-                    <div className="cpright-logo">
-                        LOGO
-                        {/* <Logo/> */}
-                    </div>
                     <li>
-                        <div className="address">
-                            <p>clark.taka16@gmai.com</p>
-                        </div>
+                        <Logo/>
+                    </li>                    
+                    <li>                        
                         <ul className="social-network">
-                            <div className="Icon">
+                            <div className="address">
+                                <p>clark.taka16@gmai.com</p>
+                            </div>
+                            <li className="Icon">
                                 <a href="/">
                                     LinkedIn
                                     {/* <Icon/> */}
                                 </a>
-                            </div>
-                            <div className="Icon">
+                            </li>
+                            <li className="Icon">
                                 <a href="/">
-                                    LinkedIn
+                                    Github
                                     {/* <Icon/> */}
                                 </a>
-                            </div>
-                            <div className="Icon">
+                            </li>
+                            <li className="Icon">
                                 <a href="/">
-                                    LinkedIn
+                                    Facboock
                                     {/* <Icon/> */}
                                 </a>
-                            </div>
+                            </li>
                         </ul>
                     </li>
-                    <div className="copyright">
-                        <p>copyright&copy;</p>
-                    </div>
+                    <li>
+                        <div className="copyright">
+                            <p>copyright&copy;</p>
+                        </div>                        
+                    </li>
 
                 </ul>
             </div>
