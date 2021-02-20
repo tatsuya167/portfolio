@@ -19,19 +19,19 @@ const Address = () => {
                             <div className="Icon">
                                 <a href="/">
                                     LinkedIn
-                                    <Icon/>
+                                    {/* <Icon/> */}
                                 </a>
                             </div>
                             <div className="Icon">
                                 <a href="/">
                                     LinkedIn
-                                    <Icon/>
+                                    {/* <Icon/> */}
                                 </a>
                             </div>
                             <div className="Icon">
                                 <a href="/">
                                     LinkedIn
-                                    <Icon/>
+                                    {/* <Icon/> */}
                                 </a>
                             </div>
                         </ul>
