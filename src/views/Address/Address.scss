@@ -4,4 +4,33 @@
     width: 100%;
     min-height: 33vh;
     background-color: #4f4f4f;
+
+    .wrap-grid {
+        width: fit-content;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+
+            li {                                               
+                .social-network {
+                    display: flex;
+                    flex-direction: row;
+                    // .address{
+
+                    // } 
+                    // .icon{
+
+                    // }
+                }
+                // .copyright{
+
+                // }
+
+            }
+        }
+    }
 }
