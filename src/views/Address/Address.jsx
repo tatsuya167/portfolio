@@ -1,49 +1,37 @@
 import React from "react";
 import "./Address.scss"
 import Logo from "./logo.jsx";
+import Icon from "./Icons/Icon.jsx";
 
 const Address = () => {
     return (
-        <section id="footer">
-            <div className="wrap-grid">
+        <section id="address">
+            <div className="align-container">
                 <ul>
-                    <li>
+                    <div className="logo">
                         <Logo/>
+                    </div>              
+                    <li className="social-network">
+                        <div className="address">
+                            <p>clark.taka16@gmail.com</p>
+                        </div>
+                        <ul className="align-Icon">
+                            <a href="/">
+                                {/* LinkedIn */}                                
+                                <Icon name="LinkedIn"/>
+                            </a>
+                            <a href="/">
+                                {/* GitHub */}
+                                <Icon name="GitHub"/>
+                            </a>                        
+                            <a href="/">
+                                {/* Facebook */}
+                                <Icon name="Facebook"/>
+                            </a>
+                        </ul>    
                     </li>                    
-                    <li>                        
-                        <ul className="social-network">
-                            <div className="address">
-                                <p>clark.taka16@gmai.com</p>
-                            </div>
-                            <li className="Icon">
-                                <a href="/">
-                                    LinkedIn
-                                    {/* <Icon/> */}
-                                </a>
-                            </li>
-                            <li className="Icon">
-                                <a href="/">
-                                    Github
-                                    {/* <Icon/> */}
-                                </a>
-                            </li>
-                            <li className="Icon">
-                                <a href="/">
-                                    Facboock
-                                    {/* <Icon/> */}
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div className="copyright">
-                            <p>copyright&copy;</p>
-                        </div>                        
-                    </li>
-
                 </ul>
             </div>
-            
         </section>
     )
 

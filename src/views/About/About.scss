@@ -1,4 +1,4 @@
-#About {
+#about {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -86,7 +86,7 @@
 
 
             div {
-                border: 1px solid silver;
+                border: 1px solid white;
             }
 
             .picture {
@@ -115,7 +115,7 @@
                 grid-column: 6 / 9;
                 grid-row: 4 / 5;
                 display: flex;
-                justify-content: start;
+                justify-content: flex-start;
                 border: none;
 
                 p {
@@ -148,6 +148,22 @@
                 }
                 ::before {left: 10px;}
                 ::after {right: 10px;}
+                
+                .align-middle{
+                    display: flex;
+                    height: 100%;                    
+                    align-items: center;
+                    justify-content: center;
+                    a {                       
+                        font-weight: bold; 
+                        color: rgb(151, 128, 128);
+                        text-decoration: none;                        
+                    }
+
+                    a:hover {
+                        color: green;
+                    }
+                }                
             }
         }
     }
