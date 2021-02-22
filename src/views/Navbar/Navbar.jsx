@@ -9,14 +9,15 @@ function Navbar(){
       <div className="nav-container">
         <ul>
           <a href="/" className="nav-bar">
-            <Logo />
+            {/* <Logo /> */}
+            <img src="https://img.icons8.com/wired/64/000000/mountain.png"/>
           </a>
           <li>
             <ul className="nav-menu">            
-              <a href="#Home">Home</a>
+              <a href="#header">Home</a>
               <a href="#works">Works</a>
-              <a href="#About">About</a>
-              <a href="#Contact">Contact</a>
+              <a href="#about">About</a>
+              <a href="#address">Contact</a>
             </ul>
           </li>
         </ul>

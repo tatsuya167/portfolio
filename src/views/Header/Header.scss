@@ -18,7 +18,7 @@
     
     .mount-1 {
         position: absolute;
-        bottom: 0px;
+        bottom: -5px;
         z-index: 0;
         animation: 2.5s forwards mountain;
     }
@@ -26,7 +26,7 @@
     .mount-2 {
         position: absolute;
         right: 0px;
-        bottom: 0px;
+        bottom: -5px;
         z-index: 0;
         animation: 3.5s forwards secondMountain;
     }
