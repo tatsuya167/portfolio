@@ -13,8 +13,12 @@ const Works = () => {
             </ul>
             
             <div className="wrap-grid">
-                <div className="works-container">
-                    <div className="one"></div>
+                <div className="works-container">                                        
+                    <div className="one">
+                        <a href="https://lucid-benz-f12be9.netlify.com/" target="_blank">
+                            <img src="tri-tech.png" alt="tri-tech" width="646" height="316"/>
+                        </a>                        
+                    </div>
                     <div className="two"></div>
                     <div className="three"></div>
                     <div className="four"></div>

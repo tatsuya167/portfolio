@@ -4,7 +4,7 @@ import "./About.scss"
 const About = () => {
 
     return (
-        <section id="About">
+        <section id="about">
 
             <ul>
                 <li>
@@ -26,7 +26,7 @@ const About = () => {
                             
                         <p>
                             I am Tatsuya takarabe.<br/>
-                            Japanese Front-end Developer.<br/>
+                            Japanese Full-Stack Developer.<br/>
                             currently living in Vancouver, Canada.
                         </p>
                             
@@ -53,7 +53,9 @@ const About = () => {
                         <p>-SCSS</p>
                     </div>
                     <div className="resume">
-                        <a href="#Resume" >Resume</a>
+                        <div className="align-middle">
+                            <a href="#Resume" >Resume</a>
+                        </div>
                     </div>
                 </div>
             </div>
