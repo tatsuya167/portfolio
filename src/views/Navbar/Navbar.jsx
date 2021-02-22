@@ -9,7 +9,8 @@ function Navbar(){
       <div className="nav-container">
         <ul>
           <a href="/" className="nav-bar">
-            <Logo />
+            {/* <Logo /> */}
+            <img src="https://img.icons8.com/wired/64/000000/mountain.png"/>
           </a>
           <li>
             <ul className="nav-menu">            

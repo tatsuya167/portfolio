@@ -19,14 +19,24 @@
             align-items: center;
                 
                 .logo {
+                    // no longer using a SVG
                     svg {
                         padding-top: 1em;
+                    }
+                    
+                    a img {
+                        padding: 1em 0;;
                     }
                 }
                 .social-network {
                     .address{
+                        // border: solid 2px gray;
+                        // background-color: gray;
                         p {
+                            font-size: 20px;
                             font-weight: bold;
+                            color: rgb(190, 170, 170);
+                            // filter: drop-shadow(0 0 1px black);
                         }
                     } 
                     .align-Icon {
