@@ -8,7 +8,7 @@ const Header = () => {
         <section id="header">
             <div className="header-container">
                 <h2>I'm Tatsuya Takarabe</h2>
-                <h2>Front-End Developer</h2>
+                <h2>Full-Stack Developer</h2>
                 <h2>Based in Vancouver</h2>
             </div>
 

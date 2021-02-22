@@ -26,7 +26,7 @@ const About = () => {
                             
                         <p>
                             I am Tatsuya takarabe.<br/>
-                            Japanese Front-end Developer.<br/>
+                            Japanese Full-Stack Developer.<br/>
                             currently living in Vancouver, Canada.
                         </p>
                             
